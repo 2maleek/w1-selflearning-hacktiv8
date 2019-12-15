@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hacktiv8 | Sign up</title>
+</head>
+<body>
+    <h1>Buat Account Baru!</h1>
+    <h2>Sign Up Form</h2>
+    <form action=".\welcome.html" method="GET">
+        <label for="f-name">First name:</label><br>
+        <input type="text" name="f-name" id="f-name" required> <br><br>
+
+        <label for="l-name">Last name:</label><br>
+        <input type="text" name="l-name" id="l-name" required> <br><br>
+
+        <span>Gender: </span><br>
+        <input type="radio" name="gender" id="male" value="male" required>
+        <label for="male">Male</label><br>
+        <input type="radio" name="gender" id="female" value="female">
+        <label for="female">Female</label><br>
+        <input type="radio" name="gender" id="other" value="other">
+        <label for="other">Other</label> <br><br>
+    
+        <label for="nationality">Nationality</label><br>
+        <select name="nationality" id="nationality" required>
+            <option value="indonesian">Indonesian</option>
+            <option value="singaporean">Singaporean</option>
+            <option value="malaysian">Malaysian</option>
+            <option value="australian">Australian</option>
+        </select> <br><br>
+
+        <span>Language Spoken:</span> <br>
+        <input type="checkbox" name="language-spoken" id="bahasa" value="bahasa">
+        <label for="bahasa">Bahasa Indonesia</label ><br>
+        <input type="checkbox" name="language-spoken" id="english" value="english">
+        <label for="english">English</label> <br>
+        <input type="checkbox" name="language-spoken" id="other-lang" value="other">
+        <label for="other-lang">Other</label> <br><br>
+
+        <label for="bio">Bio: </label> <br>
+        <textarea name="bio" id="bio" cols="30" rows="10" minlength="10" maxlength="100" required></textarea> <br>
+
+        <input type="submit" value="Sign Up" />
+
+    </form>
+</body>
+</html>
